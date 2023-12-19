@@ -1,0 +1,27 @@
+.sidebar-content{
+    background-color: #EA6A47;    
+    position: fixed;
+}
+.offcanvas{
+    background-color: #3887BE;
+}
+.body-content{
+    background-color: grey;
+}
+.btn{
+    color: white;
+    font-weight:500
+}
+.btn-toggle:hover{
+    background-color: #484848;
+    color: white;
+}
+.list-item{
+    text-decoration: none;
+    color: white;
+
+}
+.arrow-icon{
+    color: white;
+    
+}
