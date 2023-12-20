@@ -1,10 +1,23 @@
+body{
+    background-color: #F5F7F8;
+}
 .logo{
     width: 50%;
     
     margin-top: 20px;
 }
+
 .sidebar-content{
-    background-color: #45474B;        
+    background-color: #45474B;            
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;        
+}
+.body-top{    
+    margin-left: 250px;
+    padding: 15px;       
 }
 .offcanvas{
     background-color: #3887BE;
@@ -26,3 +39,23 @@
     color: white;
     
 }
+
+.signup-content{
+    float: right;
+}
+.dash{
+    margin-left: 250px;
+    color: rgb(245, 242, 242);
+}
+.navbar{
+    background-color: #495E57;    
+}
+.sign-up a{
+    list-style: none;
+    color: rgb(245, 242, 242);
+    text-decoration: none;
+}
+.body-top{
+    margin-top: 20px;    
+}
+
