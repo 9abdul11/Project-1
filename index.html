@@ -20,14 +20,12 @@
         <div class="row">
             <div class="col-2  sidebar-content">
                 <div class="px-3 pt-2 min-vh-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-square pt-3 " viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
-                      </svg>
+                    <img class="logo" src="https://yodo.club/wp-content/uploads/2022/02/New_logo_-_svg.svg" >
                     <hr>
                     <ul class="list-unstyled pt-3">
                         <li>
-                            <button class="btn btn-toggle align-items-center rounded collapsed">
+                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                                onclick="showContent('home-content')">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-house align-middle me-2 mb-1" viewBox="0 0 16 16">
                                     <path
@@ -35,7 +33,8 @@
                                 </svg>Home</button>
                         </li>
                         <li>
-                            <button class="btn btn-toggle align-items-center rounded collapsed">
+                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                                onclick="showContent('client-content')">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-people align-middle me-2 mb-1" viewBox="0 0 16 16">
                                     <path
@@ -46,13 +45,9 @@
                             <button class="btn btn-toggle align-items-center rounded collapsed"
                                 data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-calendar2-event align-middle me-2 mb-1" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
-                                    <path
-                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
-                                    <path
-                                        d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z" />
+                                    class="bi bi-arrow-right allign-middle me-2 mb-1" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
                                 </svg>Websites</button>
                             <div class="collapse" id="home-collapse">
                                 <ul class=" list-unstyled pb-1 small">
@@ -85,6 +80,7 @@
                                                 d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5" />
                                         </svg><a class="list-item" href="#">FTP</a></li>
                                 </ul>
+
                             </div>
 
                         </li>
@@ -108,11 +104,9 @@
                             <button class="btn btn-toggle align-items-center rounded collapsed"
                                 data-bs-toggle="collapse" data-bs-target="#security" aria-expanded="true">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-shield-lock align-middle me-2 mb-1" viewBox="0 0 16 16">
-                                    <path
-                                        d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56" />
-                                    <path
-                                        d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z" />
+                                    class="bi bi-arrow-right allign-middle me-2 mb-1" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
                                 </svg>Security</button>
                             <div class="collapse" id="security">
                                 <ul class="list-unstyled pb-3 pt-2 small">
@@ -134,17 +128,28 @@
                             </div>
                         </li>
                     </ul>
-
                 </div>
             </div>
 
             <div class="col-9 text-center">
-                <div class="align-items-center">
-                    <h1></h1>
+                <div class="col-10">
+                    <div id="home-content">
+                        <h1>Welcome to Home Content</h1>
+                    </div>
+                    <div id="client-content" style="display: none;">
+                        <h1>Welcome to Client Content</h1>
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <script>
+                function showContent(contentId) {
+                    document.getElementById('home-content').style.display = 'none';
+                    document.getElementById('client-content').style.display = 'none';
+
+                    document.getElementById(contentId).style.display = 'block';
+                }
+            </script>
 </body>
 
 </html>
-
