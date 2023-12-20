@@ -1,19 +1,23 @@
+.logo{
+    width: 50%;
+    
+    margin-top: 20px;
+}
 .sidebar-content{
-    background-color: #EA6A47;    
-    position: fixed;
+    background-color: #45474B;        
 }
 .offcanvas{
     background-color: #3887BE;
 }
 .body-content{
-    background-color: grey;
+    background-color: rgb(59, 57, 57);
 }
 .btn{
     color: white;
     font-weight:500
 }
 .btn-toggle:hover{
-    background-color: #484848;
+    background-color: #495E57;
     color: white;
 }
 .list-item{
