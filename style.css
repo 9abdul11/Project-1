@@ -1,10 +1,14 @@
+
+
 .logo{
     width: 50%;
     
     margin-top: 20px;
 }
 .sidebar-content{
-    background-color: #45474B;        
+    background-color: #45474B; 
+    position: fixed; 
+          
 }
 .offcanvas{
     background-color: #3887BE;
@@ -25,4 +29,12 @@
 .arrow-icon{
     color: white;
     
+}
+
+.col-9{
+    margin-left: 220px;
+    font-family:'Serif';
+    font-size: 16px;
+    padding: 30px;
+    text-align: center;
 }
