@@ -10,23 +10,15 @@
     ">
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- BoxIcons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-
-    <div>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <h4 class="dash">Dashboard</h4>
-                <ul class="nav navbar-nav navbar-right ">
-                    <li class="sign-up"><a href="">Sign Up</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
 
     <div class="container-fluid">
         <!-- Two Columns Side bar content and Body content -->
@@ -35,9 +27,9 @@
                 <div class="px-3 pt-2 min-vh-100">
                     <img class="logo" src="https://yodo.club/wp-content/uploads/2022/02/New_logo_-_svg.svg">
                     <hr>
-                    <ul class="list-unstyled pt-3">
+                    <ul class="list-unstyled pt-5">
                         <li>
-                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                            <button class="btn btn-toggle align-items-center rounded collapsed mb-2"
                                 onclick="showContent('home-content')">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-house align-middle me-2 mb-1" viewBox="0 0 16 16">
@@ -46,7 +38,7 @@
                                 </svg>Home</button>
                         </li>
                         <li>
-                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                            <button class="btn btn-toggle align-items-center rounded collapsed mb-2"
                                 onclick="showContent('client-content')">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-people align-middle me-2 mb-1" viewBox="0 0 16 16">
@@ -55,7 +47,7 @@
                                 </svg>Client</button>
                         </li>
                         <li class="dropdown">
-                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                            <button class="btn btn-toggle align-items-center rounded collapsed mb-2"
                                 data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-arrow-right allign-middle me-2 mb-1" viewBox="0 0 16 16">
@@ -98,7 +90,7 @@
 
                         </li>
                         <li>
-                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                            <button class="btn btn-toggle align-items-center rounded collapsed mb-2"
                                 onclick="showContent('globle-plugins')">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-plugin align-middle me-2 mb-1" viewBox="0 0 16 16">
@@ -107,7 +99,7 @@
                                 </svg>Global Plugins</button>
                         </li>
                         <li>
-                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                            <button class="btn btn-toggle align-items-center rounded collapsed mb-2"
                                 onclick="showContent('globle-config')">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-diagram-2 align-middle me-2 mb-1" viewBox="0 0 16 16">
@@ -116,7 +108,7 @@
                                 </svg>Global Config</button>
                         </li>
                         <li class="dropdown">
-                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                            <button class="btn btn-toggle align-items-center rounded collapsed mb-2"
                                 data-bs-toggle="collapse" data-bs-target="#security" aria-expanded="true">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-arrow-right allign-middle me-2 mb-1" viewBox="0 0 16 16">
@@ -147,27 +139,35 @@
             </div>
 
             <div class="col  body-top">
-                <div class="col-10">
+                <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                       <a href="#" class="navbar-brand nav_logo">Dashboard Overview</a>
+                       <form class="form-inline nav_search my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">                        
+                        <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
+                      </form>
+                </nav>                                    
+                <div class="col body-content">
                     <div id="home-content">
-                        <h1>Home Content</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias commodi assumenda fuga
-                            repellendus, mollitia laudantium iste voluptates animi nemo, incidunt ratione nihil omnis
-                            voluptas beatae saepe iure perferendis eligendi dolore necessitatibus quod sapiente enim, ex
-                            architecto. Perferendis repellat tenetur possimus ipsam eveniet quas reiciendis deserunt
-                            perspiciatis, soluta, alias provident incidunt at veritatis voluptatem dolorem illo? Illo
-                            consectetur provident soluta ducimus mollitia! Possimus iusto porro quibusdam impedit
-                            accusamus molestias odit sapiente vero dolores labore temporibus enim maxime ut laudantium
-                            molestiae id ratione aut, harum, iste placeat iure magni dicta in eveniet. Repudiandae
-                            eligendi ab tenetur adipisci deserunt dolorem necessitatibus quo velit consectetur sapiente
-                            placeat consequuntur quaerat culpa natus magni nesciunt temporibus, itaque distinctio atque
-                            reiciendis, laboriosam, voluptas delectus ipsa? Aliquid inventore fuga iusto id itaque et
-                            beatae tempore error magnam doloremque. Tempora cumque, eius, repudiandae nihil eligendi
-                            ipsa animi ea cupiditate eaque veritatis repellendus obcaecati nisi ullam eos neque.
-                            Aspernatur, quae nesciunt sunt facilis corrupti ipsum quis vel asperiores culpa sequi. Natus
-                            temporibus pariatur, sed iste vitae obcaecati magnam quae harum illo nisi incidunt molestiae
-                            atque tempore architecto amet fugiat voluptatem tempora ducimus qui fugit fuga
-                            necessitatibus aut? Placeat fugiat necessitatibus ad similique culpa debitis totam, illo,
-                            quae, quod dolorem a.</p>
+                        <h1>Dashboard</h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col mb-5 mt-5">
+                                    <img class="img-1" src="images\hg-1.jpg" alt="">
+                                </div>
+                            </div>
+                        <div class="row text-center">                               
+                                 <div class="col-sm">
+                                    <img width="250px" src="images\hg-2.jpg" alt="">
+                                 </div>   
+                                 <div class="col-sm">
+                                    <img width="250px" src="images\hg-3.jpg" alt="">
+                                 </div>                             
+                                 <div class="col-sm">
+                                    <img width="250px" src="images\hg-4.jpg" alt="">
+                                 </div>                             
+                            </div>
+                        </div>
+                        
                     </div>
                     <div id="client-content" style="display: none;">
                         <h1>Client Content</h1>
